@@ -1,0 +1,39 @@
+name: 최신 블로그 포스팅으로 README 업데이트
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 리포지토리 체크아웃
+        uses: actions/checkout@v3
+
+      - name: Node.js 설정
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: 의존성 설치
+        run: npm install
+
+      - name: 업데이트 스크립트 실행
+        run: npx ts-node src/updateReadme.ts
+
+      - name: 변경 사항 커밋 및 푸시
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "GitHub Actions Bot"
+          git add README.md
+          if ! git diff --cached --quiet; then
+            git commit -m "docs: 포스팅 목록 업데이트 ($(date +'%Y-%m-%d')) (#1)"
+            git push
+          else
+            echo "변경 사항이 없어 커밋하지 않습니다."
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
