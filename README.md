@@ -1,7 +1,7 @@
 <h1>📖 최신 블로그 포스팅</h1>
       <table>
         <tr><td align="center" style="border: 1px solid #ddd; padding: 8px;">
-                <img src="https://blog.kakaocdn.net/dn/N5AEe/btsKD4v5lcu/lNGb6GUFYHro4iKenmdcgk/img.png" alt="포스팅 이미지" width="200" height="100"><br>
+                <img src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fesweyq%2FbtsKC6n1sFJ%2FNfshQw8GU4TZZWe1aq4jK0%2Fimg.png" alt="포스팅 이미지" width="200" height="100"><br>
                 <strong><a href="https://cobi-98.tistory.com/86">[토이프로젝트] TS로 깃허브 README에 블로그 포스팅 자동 반영하기</a></strong><br>
                 <p style="margin: 0; padding: 0;">토이프로젝트 선정 GitHub를 경험한 개발자...</p>
                 <small style="margin-top: 4px;">11/10/2024</small>
