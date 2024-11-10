@@ -1,3 +1,3 @@
-import { updateReadme } from './api/updateReadme';
+import { fetchBlogPosts } from './api/updateReadme';
 
-updateReadme();
+fetchBlogPosts();
