@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
-          BLOG_RSS_URL: ${{ secrets.BLOG_RSS_URL }}
-          GITHUB_USERNAME: ${{ secrets.GIT_USERNAME }}
-          REPO_NAME: ${{ secrets.REPO_NAME}}
-          
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BLOG_RSS_URL: ${{ secrets.BLOG_RSS_URL }}
+        GITHUB_USERNAME: ${{ secrets.GIT_USERNAME }}
+        REPO_NAME: ${{ secrets.REPO_NAME}}
+
     steps:
       - name: 리포지토리 체크아웃
         uses: actions/checkout@v3
