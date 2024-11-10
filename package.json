@@ -98,7 +98,6 @@
     "undici-types": "^6.19.8",
     "uri-js": "^4.4.1",
     "v8-compile-cache-lib": "^3.0.1",
-    "web-streams-polyfill": "^4.0.0",
     "which": "^2.0.2",
     "word-wrap": "^1.2.5",
     "yn": "^3.1.1",

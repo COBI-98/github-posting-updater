@@ -1,5 +1,4 @@
 import { UpdateReadme } from './apis/updateReadme';
-import 'web-streams-polyfill/es6';
 
 async function main() {
   try {
